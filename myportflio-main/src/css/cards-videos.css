@@ -1,12 +1,13 @@
-.card-desciption {
+.card-description {
   background: rgb(23, 1, 42);
   width: 80%;
-  height: 60%;
+  height: auto;
   display: none;
   position: fixed;
   flex-direction: column;
   top: 50%;
   left: 50%;
+  padding: 2em;
   transform: translate(-50%, -50%);
   z-index: 1;
   justify-content: center;
@@ -32,15 +33,18 @@
 .card-container .right {
   max-width: 50ch;
 }
-.card-container .icone-hide {
-  position: fixed;
-  right: 20px;
-  top: 20px;
+.card-description .container-icone-hide {
+  width: 91.4%;
+  display: flex;
+  justify-content: end;
+  padding: 1em 0;
+}
+.card-description .container-icone-hide .icone-hide {
   font-size: 1.5em;
   cursor: pointer;
   color: greenyellow;
 }
-.card-container .icone-hide:hover {
+.container-icone-hide .icone-hide:hover {
   color: rgb(121, 17, 207);
 }
 .card-container .right {
@@ -55,7 +59,7 @@
 .right h2 {
   color: gray;
 }
-.card-desciption .buttons {
+.card-description .buttons {
   width: 100%;
   height: 15%;
   display: flex;
@@ -64,7 +68,7 @@
   gap: 2em;
   padding: 1em 0;
 }
-.card-desciption .buttons a {
+.card-description .buttons a {
   text-decoration: none;
   color: rgb(121, 17, 207);
   text-align: center;
@@ -72,7 +76,7 @@
   background: greenyellow;
   padding: 0.5em;
 }
-.card-desciption .buttons a:hover {
+.card-description .buttons a:hover {
   background: rgb(121, 17, 207);
   color: greenyellow;
 }
@@ -82,12 +86,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: auto;
     gap: 1em;
     position: relative;
   }
   video {
-    width: 20em;
+    width: 15em;
     height: auto;
   }
   .card-container .right {
@@ -109,12 +113,12 @@
     width: 30em;
     height: auto;
   }
-  .card-desciption {
+  .card-description {
     padding: 2em 0;
   }
 }
 @media (max-width: 1225px) {
-  .card-desciption {
+  .card-description {
     background: rgb(23, 1, 42);
     width: 100%;
     height: 100%;
