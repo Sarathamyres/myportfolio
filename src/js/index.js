@@ -7,7 +7,7 @@ document.querySelectorAll("button[data-popup]").forEach((button) => {
     document.getElementById("hide").setAttribute("data-popup-id", popupId);
   });
 });
-/*
+
 document.querySelectorAll(".icone-hide").forEach((hide) => {
   hide.addEventListener("click", function () {
     const popupId = this.getAttribute("data-popup-id");
@@ -15,8 +15,6 @@ document.querySelectorAll(".icone-hide").forEach((hide) => {
     document.body.classList.remove("no-scroll");
   });
 });
-
-*/
 
 window.addEventListener("scroll", function () {
   const barsList = querySelector(".navegation-bars");
