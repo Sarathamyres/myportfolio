@@ -91,7 +91,7 @@
     position: relative;
   }
   video {
-    width: 15em;
+    width: 100%;
     height: auto;
   }
   .card-container .right {

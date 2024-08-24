@@ -16,9 +16,22 @@ document.querySelectorAll(".icone-hide").forEach((hide) => {
   });
 });
 
-window.addEventListener("scroll", function () {
-  const barsList = querySelector(".navegation-bars");
-  if (window.pageYOffset > 80) {
-    barsList.classList.add('no-visible');
-  } 
+const iconBars = document.querySelector(".icon-bars");
+const inputBars = document.getElementById("bars");
+inputBars.addEventListener("change", function () {
+  if (inputBars.checked) {
+    iconBars.style.color = "rgb(121, 17, 207)";
+  } else {
+    iconBars.style.color = "";
+  }
 });
+document.addEventListener('scroll', function() {
+  if (inputBars.checked) {
+    inputBars.checked = false;
+  }
+})
+window.addEventListener('resize', function(){
+  if (inputBars.checked) {
+    inputBars.checked = false;
+  }
+})
