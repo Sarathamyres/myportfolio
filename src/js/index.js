@@ -1,3 +1,18 @@
+const videos = document.getElementsByTagName('video');
+for (let i = 0; i < videos.length; i++) {
+    videos[i].muted = true;
+}
+function playVideo() {
+    for (let i = 0; i < videos.length; i++) {
+        videos[i].play();
+    }
+}
+function pauseVideo() {
+    for (let i = 0; i < videos.length; i++) {
+        videos[i].pause();
+    }
+}
+
 document.querySelectorAll("button[data-popup]").forEach((button) => {
   button.addEventListener("click", function () {
     const popupId = this.getAttribute("data-popup");

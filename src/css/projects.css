@@ -15,10 +15,10 @@
   justify-content: center;
 }
 .projects-container .project-item {
-  width: 410px;
+  width: 400px; /*container da cor lateral dos cards*/
   height: 200px;
   margin: 2em;
-   display: flex;
+  display: flex;
   justify-content: end;
   position: relative;
   opacity: 0.5;
@@ -29,6 +29,7 @@
   opacity: 1;
 }
 .projects-container .project-item img {
+  width: 395px;
   max-width: 100%;
   z-index: 0;
   opacity: 0.5;
@@ -87,5 +88,4 @@
   .projects-container {
     gap: 2em;
   }
-
 }

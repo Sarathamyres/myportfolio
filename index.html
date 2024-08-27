@@ -39,9 +39,9 @@
                 <span>//</span> about me
               </a>
             </li>
-              <li class="navegation-item">
-                <a href="#projects"><span>//</span> projects</a>
-              </li>
+            <li class="navegation-item">
+              <a href="#projects"><span>//</span> projects</a>
+            </li>
             <li class="navegation-item">
               <a href="#contacts"><span>//</span> contacts</a>
             </li>
@@ -56,8 +56,8 @@
       <div class="home-container">
         <p class="apresentation">Olá, meu nome é</p>
         <h2 class="name">Sara Thamyres</h2>
-        <p class="introduction">Sou uma desenvolvedora frontend em formação, apaixonada por tecnologia, gosto de explorar e estou sempre me desafiando com novos projetos.</p>
-      <a href="">// clique aqui para ver meu currículo</a>
+        <p class="introduction">Sou uma Desenvolvedora Front-end em Formação, apaixonada por tecnologia, gosto de explorar e estou sempre me desafiando com novos projetos.</p>
+        <a target="_blank" title="Ver o meu currículo" href="https://drive.google.com/file/d/1yzqEkFqbXWnzM6Ze1TVN6eAOLARW2qCg/view?usp=sharing">// clique aqui para ver meu currículo</a>
       </div>
     </section>
     <section id="about-me" aria-labelledby="about-me">
@@ -70,7 +70,7 @@
             <div class="who-iam">
               <h3><span>#</span> SOBRE MIM</h3>
               <p>
-                <span>##</span> Tenho 21 anos de idade, atualmente curso Ciência e Tecnologia na UFRN, e pretendo fazer ênfase em Engenharia da Computação. Fora da faculdade estudo desenvolvimento web, na qual me dedico ao Front-End.
+                <span>##</span> Tenho 21 anos e estou cursando Ciência e Tecnologia na UFRN. Fora da faculdade, estudo desenvolvimento web, com um foco particular no Front-end, na qual em breve possuo interesse em estudar Back-end.Estou empenhada em integrar minhas habilidades técnicas com conhecimentos acadêmicos para me tornar uma profissional exemplar na área de tecnologia.
               </p>
               <p>
                 <span>##</span> Estou disponível para estágio. Tenho muito interesse em aprender e aprimorar meus conhecimentos. Adoraria fazer parte de um time onde eu possa evoluir como pessoa e profissional.
@@ -101,34 +101,80 @@
         </div>
       </div>
     </section>
-    <div class="container-skills">
-      <div class="skills skills-responsive">
-        <h3><span>#</span> HABILIDADES </h3>
-        <ul class="list-skills">
-          <li class="skills-item">
-            <p>HTLM5</p>
-            <i class="fa-brands fa-html5"></i>
-          </li>
-          <li class="skills-item">
-            <P>CSS3</P>
-            <i class="fa-brands fa-css3-alt"></i>
-          </li>
-          <li class="skills-item">
-            <P>WORDPRESS</P>
-            <i class="fa-brands fa-wordpress"></i>
-          </li>
-          <li class="skills-item">
-            <P>JAVASCRIPT</P>
-            <i class="fa-brands fa-js"></i>
-          </li>
-        </ul>
+    <section id="skills" aria-labelledby="skills">
+      <div class="container-skills">
+        <div class="skills skills-responsive">
+          <h3><span>#</span> HABILIDADES </h3>
+          <ul class="list-skills">
+            <li class="skills-item">
+              <p>HTLM5</p>
+              <i class="fa-brands fa-html5"></i>
+            </li>
+            <li class="skills-item">
+              <P>CSS3</P>
+              <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li class="skills-item">
+              <P>WORDPRESS</P>
+              <i class="fa-brands fa-wordpress"></i>
+            </li>
+            <li class="skills-item">
+              <P>JAVASCRIPT</P>
+              <i class="fa-brands fa-js"></i>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-
+    </Section>
     <section id="projects" aria-labelledby="projects">
       <div class="projects">
         <h3><span>#</span> MEUS PROJETOS</h3>
         <div class="projects-container">
+          <div class="project-item">
+            <img src="src/img/projects/alurabook.png" alt="Projeto alurabooks">
+            <div class="tittle-project">
+              <h3>alurabooks</h3>
+              <div class="languages">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+            <div class="description">
+              <div class="description-container">
+                <p>Em desenvolvimento</p>
+                <button data-popup="popup4">Ver mais</button>
+              </div>
+            </div>
+          </div>
+          <div id="popup4" class="card-description">
+            <div class="container-icone-hide">
+              <i data-popup-id="popup4" class="icone-hide fa-solid fa-x"></i>
+            </div>
+            <div class="card-container">
+              <div class="left">
+                <video width="600" height="300" controls>
+                  <source src="src/videos/alurabook.mp4" type="video/mp4">
+                  Seu navegador não suporta a tag de vídeo.
+                </video>
+              </div>
+              <div class="right">
+                <h2>alurabooks</h2>
+                <p>Em desenvolvimento.
+                </p>
+                <p>Esse projeto está sendo desenvolvido com:</p>
+                <ul>
+                  <li> html5</li>
+                  <li> css3</li>
+                  <li> javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons">
+              <!-- <a href="" target="_blank">Ver projeto</a>
+             <a href="" target="_blank">Ver repositório</a>*/ -->
+            </div>
+          </div>
           <div class="project-item">
             <img src="src/img/projects/x-devemdobro.png" alt="Projeto X-devemdobro">
             <div class="tittle-project">
@@ -142,14 +188,14 @@
             <div class="description">
               <div class="description-container">
                 <p>09 de junho de 2024</p>
-                <button data-popup="popup1">Ver mais</button>
+                <button data-popup="popup4">Ver mais</button>
               </div>
             </div>
           </div>
-          <div id="popup1" class="card-description">
-           <div class="container-icone-hide">
-            <i data-popup-id="popup1" class="icone-hide fa-solid fa-x"></i>
-           </div>
+          <div id="popup4" class="card-description">
+            <div class="container-icone-hide">
+              <i data-popup-id="popup4" class="icone-hide fa-solid fa-x"></i>
+            </div>
             <div class="card-container">
               <div class="left">
                 <video width="600" height="300" controls>
@@ -170,8 +216,8 @@
               </div>
             </div>
             <div class="buttons">
-              <a href="">Ver projeto</a>
-              <a href="">Ver repositório</a>
+              <a href="https://sarathamyres.github.io/Projeto-X-Devemdobro/" target="_blank">Ver projeto</a>
+              <a href="https://github.com/Sarathamyres/Projeto-X-Devemdobro" target="_blank">Ver repositório</a>
             </div>
           </div>
           <div class="project-item">
@@ -187,14 +233,14 @@
             <div class="description">
               <div class="description-container">
                 <p>16 de julho de 2024</p>
-                <button data-popup="popup2">Ver mais</button>
+                <button data-popup="popup3">Ver mais</button>
               </div>
             </div>
           </div>
-          <div id="popup2" class="card-description">
-           <div class="container-icone-hide">
-            <i data-popup-id="popup2" class="icone-hide fa-solid fa-x"></i>
-           </div>
+          <div id="popup3" class="card-description">
+            <div class="container-icone-hide">
+              <i data-popup-id="popup3" class="icone-hide fa-solid fa-x"></i>
+            </div>
             <div class="card-container">
               <div class="left">
                 <video width="600" height="300" controls>
@@ -204,7 +250,7 @@
               </div>
               <div class="right">
                 <h2>Home page</h2>
-                <p>Fiz essa Home page pelo Frontend Mentor. Ela nãp possui as funcionalidades de um site, mas foi bastante interessante pra treinar o manejo com as div´s. 
+                <p>Fiz essa Home page pelo Frontend Mentor. Ela nãp possui as funcionalidades de um site, mas foi bastante interessante pra treinar o manejo com as div´s.
                 </p>
                 <p>Esse projeto foi desenvolvido usando:</p>
                 <ul>
@@ -215,8 +261,53 @@
               </div>
             </div>
             <div class="buttons">
-              <a href="">Ver projeto</a>
-              <a href="">Ver repositório</a>
+              <a href="https://sarathamyres.github.io/news-homepage-main_FrontendMentor/" target="_blank">Ver projeto</a>
+              <a href="https://github.com/Sarathamyres/news-homepage-main_FrontendMentor" target="_blank">Ver repositório</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="src/img/projects/portfolio - devemdobro.png" alt="Projeto Portfólio">
+            <div class="tittle-project">
+              <h3>X-devemdobro</h3>
+              <div class="languages">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+            <div class="description">
+              <div class="description-container">
+                <p>01 de maio de 2024</p>
+                <button data-popup="popup2">Ver mais</button>
+              </div>
+            </div>
+          </div>
+          <div id="popup2" class="card-description">
+            <div class="container-icone-hide">
+              <i data-popup-id="popup2" class="icone-hide fa-solid fa-x"></i>
+            </div>
+            <div class="card-container">
+              <div class="left">
+                <video width="600" height="300" controls>
+                  <source src="src/videos/portfolio-imersaodevemdobro.mp4" type="video/mp4">
+                  Seu navegador não suporta a tag de vídeo.
+                </video>
+              </div>
+              <div class="right">
+                <h2>Portfólio DEV EM DOBRO</h2>
+                <p>Esse projeto do Dev em dobro me permitiu aprender novas habilidades no css. Como os efeitos "Smooth Scroll" e "Tooltip".
+                </p>
+                <p>Esse projeto foi desenvolvido usando:</p>
+                <ul>
+                  <li> html5</li>
+                  <li> css3</li>
+                  <li> javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="https://sarathamyres.github.io/portflofio-imersao-Devemdobro-io/" target="_blank">Ver projeto</a>
+              <a href="https://github.com/Sarathamyres/portflofio-imersao-Devemdobro-io" target="_blank">Ver repositório</a>
             </div>
           </div>
           <div class="project-item">
@@ -232,14 +323,14 @@
             <div class="description">
               <div class="description-container">
                 <p>04 de junho de 2024</p>
-                <button data-popup="popup3">Ver mais</button>
+                <button data-popup="popup1">Ver mais</button>
               </div>
             </div>
           </div>
-          <div id="popup3" class="card-description">
+          <div id="popup1" class="card-description">
             <div class="container-icone-hide">
-              <i data-popup-id="popup3" class="icone-hide fa-solid fa-x"></i>
-             </div>
+              <i data-popup-id="popup1" class="icone-hide fa-solid fa-x"></i>
+            </div>
             <div class="card-container">
               <div class="left">
                 <video width="600" height="300" controls>
@@ -258,11 +349,11 @@
                   <li> javascript</li>
                 </ul>
               </div>
-              
+
             </div>
             <div class="buttons">
-              <a href="">Ver projeto</a>
-              <a href="">Ver repositório</a>
+              <a href="https://sarathamyres.github.io/interactive-rating-component/" target="_blank">Ver projeto</a>
+              <a href="https://github.com/Sarathamyres/interactive-rating-component" target="_blank">Ver repositório</a>
             </div>
           </div>
           <div class="project-item">
@@ -277,14 +368,14 @@
             <div class="description">
               <div class="description-container">
                 <p>16 de maio de 2024</p>
-                <button data-popup="popup4">Ver mais</button>
+                <button data-popup="popup0">Ver mais</button>
               </div>
             </div>
           </div>
-          <div id="popup4" class="card-description">
+          <div id="popup0" class="card-description">
             <div class="container-icone-hide">
-              <i data-popup-id="popup4" class="icone-hide fa-solid fa-x"></i>
-             </div>
+              <i data-popup-id="popup0" class="icone-hide fa-solid fa-x"></i>
+            </div>
             <div class="card-container">
               <div class="left">
                 <video width="600" height="300" controls>
@@ -294,7 +385,7 @@
               </div>
               <div class="right">
                 <h2>QR-CODE</h2>
-                <p>Esse foi o meu primeiro projeto feito pelo Frontend Mentor, uma plataforma que oferece projetos para quem está estudando desenvolvimento web - frontend. Ele é bem simples, mas foi aqui que entendi a diferença entre "px" e "em", conseguindo assim, manter o tamanho da div fixo.</p>
+                <p>Esse foi o meu primeiro projeto feito pelo Front-end Mentor, uma plataforma que oferece projetos para quem está estudando desenvolvimento web - frontend. Ele é bem simples, mas foi aqui que entendi a diferença entre "px" e "em", conseguindo assim, manter o tamanho da div fixo.</p>
                 <p>Esse projeto foi desenvolvido usando:</p>
                 <ul>
                   <li> html5</li>
@@ -303,8 +394,8 @@
               </div>
             </div>
             <div class="buttons">
-              <a href="">Ver projeto</a>
-              <a href="">Ver repositório</a>
+              <a href=" https://sarathamyres.github.io/frontendMentor-qrcode-io/" target="_blank">Ver projeto</a>
+              <a href="https://github.com/Sarathamyres/frontendMentor-qrcode-io" target="_blank">Ver repositório</a>
             </div>
           </div>
         </div>
@@ -312,29 +403,29 @@
     </section>
     <section aria-labelledby="contacts" id="contacts">
       <div class="contacts">
-          <div class="text">
-            <h3><span>#</span> ENTRE EM CONTATO</h3>
-            <ul class="contacts-list">
-              <li class="list-item">
-                <a href="https://github.com/Sarathamyres" target="_blank" title="Ver o meu perfil do Github">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li class="list-item">
-                <a href="https://www.linkedin.com/in/sara-thamyres" target="_blank" title="Ver o meu perfil do Linkedin">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-item">
-                <a href="mailto:thamyressara071@gmail.com" target="_blank" title="Mande-me um email">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </li>
-            </ul>
-            <P>
-              <span>##</span> Sinta-se a vontade caso queira mandar um 'oi', fazer uma pergunta ou apenas dar um feedback ;)
-            </P>
-          </div>
+        <div class="text">
+          <h3><span>#</span> ENTRE EM CONTATO</h3>
+          <ul class="contacts-list">
+            <li class="list-item">
+              <a href="https://github.com/Sarathamyres" target="_blank" title="Ver o meu perfil do Github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="https://www.linkedin.com/in/sara-thamyres" target="_blank" title="Ver o meu perfil do Linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="mailto:thamyressara071@gmail.com" target="_blank" title="Mande-me um email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+          <P>
+            <span>##</span> Sinta-se a vontade caso queira mandar um 'oi', fazer uma pergunta ou apenas dar um feedback ;)
+          </P>
+        </div>
       </div>
     </section>
   </main>
@@ -348,7 +439,7 @@
       </a>
     </div>
   </footer>
-  
+
   <script src="src/js/index.js"></script>
 
 </body>
