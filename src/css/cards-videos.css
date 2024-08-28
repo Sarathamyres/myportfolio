@@ -12,6 +12,10 @@
   z-index: 1;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+}
+.card-description::-webkit-scrollbar {
+  width: 5px !important;
 }
 .card-container {
   display: flex;
