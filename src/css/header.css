@@ -19,6 +19,9 @@ header {
   cursor: pointer;
   border: 1px solid rebeccapurpl;
 }
+.heading .logo:hover{
+  color: rgb(121, 17, 207);
+}
 .heading .navegation {
   display: flex;
   font-size: 2em;
