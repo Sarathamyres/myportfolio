@@ -1,0 +1,111 @@
+header {
+  background: rgb(1, 0, 3) 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding: 2em 3em;
+}
+.heading .logo {
+  font-size: 3em;
+  color: greenyellow;
+  padding: 0.5em;
+  cursor: pointer;
+  border: 1px solid rebeccapurpl;
+}
+.heading .logo:hover{
+  color: rgb(121, 17, 207);
+}
+.heading .navegation {
+  display: flex;
+  font-size: 2em;
+  gap: 2em;
+  color: greenyellow;
+}
+.heading .navegation span {
+  color: greenyellow;
+}
+.heading .navegation-item:hover {
+  color: greenyellow;
+}
+header .line {
+  border: 1px solid rgb(121, 17, 207);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.heading .menu-bars {
+  display: none;
+}
+.heading .menu-bars .icon-bars {
+  font-size: 1.5em;
+  color: greenyellow;
+  cursor: pointer;
+}
+.heading .menu-bars .icon-bars:hover {
+  color: rgb(121, 17, 207);
+}
+@media (max-width: 500px) {
+  .heading {
+    padding: 1em 3em;
+  }
+  .heading .navegation {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    gap: 2em;
+    color: greenyellow;
+  }
+  .heading .navegation-bars {
+    position: absolute;
+    left: 0;
+    top: 4.5em;
+    padding: 1em 0;
+    background: rgb(1, 0, 3) 10%;
+    border-radius: 0 0 30px 30px;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .heading .navegation-bars {
+    position: absolute;
+    left: 0;
+    top: 5em;
+    padding: 1em 0;
+    background: rgb(1, 0, 3) 10%;
+    border-radius: 0 0 30px 30px;
+  }
+}
+@media (max-width: 900px) {
+  .heading .menu-bars {
+    display: block;
+  }
+  .heading .navegation {
+    display: none;
+  }
+  .heading .menu-bars .icon-bars {
+    font-size: 3em;
+  }
+  header input:checked ~ .navegation-bars {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-color: transparent;
+  }
+  .navegation-bars .navegation-item {
+    flex: 1;
+    text-align: center;
+  }
+}

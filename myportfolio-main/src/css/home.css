@@ -1,0 +1,46 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .home-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0;
+}
+main .home-container .apresentation {
+  color: aliceblue;
+  margin-bottom: 0.5em;
+}
+main .home-container .name {
+  font-size: 35px;
+  color: blueviolet;
+}
+main .home-container .introduction {
+  font-size: 1em;
+  max-width: 65ch;
+  margin:  1em 0;
+}
+main .home-container a {
+  color: greenyellow;
+}
+main .home-container a:hover {
+  color: rgb(121, 17, 207);
+}
+main img {
+  max-width: 20%;
+}
+
+@media (max-width: 428px) {
+  main .home-container {
+    padding: 1em;
+  }
+}
+@media (max-width: 990px) {
+  main .home-container {
+    text-align: center;
+  }
+}
+
